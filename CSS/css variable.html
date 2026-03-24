@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css variable</title>
+    <style>
+        :root{
+            --primary-color: blue;
+        }
+        .container {
+            --size:56px;
+            --primary-color: rgb(212, 39, 201);
+            background-color: var(--primary-color);
+            color: var(--text-color,purple);
+        }
+
+        .box {
+            background-color: beige;
+            color: black;
+            margin: 45px;
+        }
+
+        footer{
+            border:2px solid var(--primary-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box3</div>
+        <div class="box">Box4</div>
+        <div class="box">Box5</div>
+    </div>
+
+    <footer>
+        Copyright &copy; 2024
+    </footer>
+</body>
+
+</html>

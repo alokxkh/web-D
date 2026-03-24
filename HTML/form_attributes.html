@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Fitness Form</h1>
+
+    <form action="/process.php">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your Name">
+        <br><br>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number">
+        <br> <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="pass" placeholder="Enter your Password">
+        <br><br>
+        <label for="cpass">Confirm Password</label>
+        <input type="password" id="cpass" name="cpass" placeholder="Confirm your Password">
+        <br><br>
+
+        <p>Choose your gender:</p>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <p>Choose your hobbies:</p>
+        <input type="checkbox" name="hobby" id="reading" value="reading">
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" name="hobby" id="traveling" value="traveling">
+        <label for="traveling">Traveling</label>
+
+        <input type="checkbox" name="hobby" id="cooking" value="cooking">
+        <label for="cooking">Cooking</label>
+        <br><br>
+        <input type="submit" value="Submit">
+        <br><br>
+
+        <!-- Dropdown List: -->
+
+        <label for="city">Choose your city:</label>
+        <select name="city" id="city">
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+        </select>
+
+        <br><br>
+        <textarea name="description" rows="7" cols="201" id="description" placeholder="Enter a description"></textarea>
+
+    </form>
+</body>
+
+</html>
