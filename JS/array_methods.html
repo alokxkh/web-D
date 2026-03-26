@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Methods</title>
+    <script>
+        
+        // let arr=[4,67,true,"harry"]
+        // console.log(arr)
+
+        // arr.push(5)
+        // arr.pop()
+        // arr.shift()
+
+
+        // for(let i=0;i<arr.length;i++){
+        //     const element = arr[i];
+        //     console.log(element);
+        // }
+
+        let ar=[1,2,3]
+        function sqaure(a){
+            return a*a;
+        }
+
+        let arrnew=ar.map(sqaure)
+        console.log(arrnew)
+
+        let scores = [45,46,64,65,78,90]
+
+        function gt6(a){
+            if(a>50){
+                return true
+            }
+            return false
+        }
+
+        console.log(scores.filter(gt6))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

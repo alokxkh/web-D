@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JavaScript</title>
+
+    <script>
+        console.log("Functions in JavaScript");
+
+        let a = 10;
+        let b=20;
+
+        // let sum = a + b;
+        // console.log(sum);
+        // let avgerage = sum/2;
+        // console.log(avgerage);
+        // let averageplusone = avgerage + 1;
+        // console.log(averageplusone);
+
+        function averageplusone(a,b){
+            let sum = a + b;
+            console.log("Sum:", sum);
+            let avgerage = sum/2;
+            console.log("Average:", avgerage);
+            let averageplusone = avgerage + 1;
+            return averageplusone;
+        }
+
+        console.log("Average + 1:", averageplusone(10,20));
+
+
+        const sum = function(a,b){
+            return a + b;
+        }
+
+        console.log("Sum:", sum(10,20));
+
+        let num=4;
+
+        const square=(num) =>{
+            return num*num;
+        };
+
+        console.log("Sqaure of",num,"is : ",square(4));
+    </script>
+</head>
+<body>
+    Javascript Functions
+</body>
+</html>
